@@ -1,5 +1,8 @@
+import { NumberTicker } from "@/components/magicui/number-ticker";
 import { ChevronRight } from "lucide-react";
-    
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+import { CountBadge } from "./count_badge";
+
 interface ListItemProps {
   image: string;
   imageAlt: string;
@@ -10,9 +13,13 @@ interface ListItemProps {
     href: string;
     variant?: 'primary' | 'secondary' | 'huggingface';
   }[];
+  countBadge?: {
+    value: number;
+    text: string;
+  };
 }
 
-export default function ListItem({ image, imageAlt, title, description, buttons }: ListItemProps) {
+export default function ListItem({ image, imageAlt, title, description, buttons, countBadge }: ListItemProps) {
   return (
     <div className="flex flex-col md:flex-row gap-6 px-50 py-5 bg-white dark:bg-slate-800 ">
       {/* Image - Left Side */}
@@ -30,6 +37,11 @@ export default function ListItem({ image, imageAlt, title, description, buttons 
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
           {title}
         </h3>
+
+        {countBadge && (
+          <CountBadge text={countBadge.text} value={countBadge.value} />     
+        )}
+
         
         {/* Description */}
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed">

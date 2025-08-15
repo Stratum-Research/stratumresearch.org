@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative">
+    <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-100 dark:from-slate-900 dark:via-blue-950 dark:to-indigo-950">
 
 
     <div className="text-center px-4 sm:px-6 lg:px-8 relative z-10">
