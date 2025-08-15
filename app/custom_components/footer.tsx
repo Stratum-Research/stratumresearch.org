@@ -1,4 +1,4 @@
-import { Github, Brain, Code, FlaskConical, ExternalLink } from "lucide-react";
+import { Github, FlaskConical } from "lucide-react";
 import IconButton from "./icon_button";
 
 export default function Footer() {

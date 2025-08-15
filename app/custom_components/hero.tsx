@@ -1,28 +1,9 @@
-import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { ChevronRight } from "lucide-react";
-import { GridPattern } from "@/components/magicui/grid-pattern";
-
 
 export default function Hero() {
   return (
-        <section className="min-h-screen flex items-center justify-center relative ">
-      
-      {/* Background Grid */}
-      <div className="absolute inset-0 w-full h-full">
-      {/* <GridPattern /> */}
-
-        {/* <FlickeringGrid
-          className="absolute inset-0 z-0 [mask-image:radial-gradient(800px_circle_at_center,white,transparent)]"
-          squareSize={4}
-          gridGap={6}
-          color="#001A6E"
-          maxOpacity={0.1}
-          flickerChance={0.3}
-        //   height={1200}
-        //   width={1200}
-        /> */}
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative">
 
 
     <div className="text-center px-4 sm:px-6 lg:px-8 relative z-10">
