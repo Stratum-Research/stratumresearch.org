@@ -1,7 +1,7 @@
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { ChevronRight } from "lucide-react";
-
+import { GridPattern } from "@/components/magicui/grid-pattern";
 
 
 export default function Hero() {
@@ -10,7 +10,9 @@ export default function Hero() {
       
       {/* Background Grid */}
       <div className="absolute inset-0 w-full h-full">
-        <FlickeringGrid
+      {/* <GridPattern /> */}
+
+        {/* <FlickeringGrid
           className="absolute inset-0 z-0 [mask-image:radial-gradient(800px_circle_at_center,white,transparent)]"
           squareSize={4}
           gridGap={6}
@@ -19,7 +21,7 @@ export default function Hero() {
           flickerChance={0.3}
         //   height={1200}
         //   width={1200}
-        />
+        /> */}
       </div>
 
 
